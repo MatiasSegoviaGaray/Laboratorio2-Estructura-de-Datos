@@ -33,10 +33,11 @@ Node * createNode(void * data) {
 
 List * createList() {
     List * list = (List*)malloc(sizeof(List));
+    assert(list != NULL);
     list->head = NULL;
     list->tail = NULL;
     list->current = NULL;
-    return NULL;
+    return list;
 }
 
 // 2. Programe las funciones void * firstList(List * list) y void * nextList(List * list).
