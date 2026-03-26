@@ -81,8 +81,9 @@ void pushFront(List * list, void * data) {
         list -> head = nuevoDato;
         list -> tail = nuevoDato;
     }
-    nuevoDato = list -> head;
-    list -> current = nuevoDato;
+    list -> current = list -> head;
+    list -> current -> prev = nuevoDato;
+    return list -> current -> prev;
 }
 
 void pushBack(List * list, void * data) {
