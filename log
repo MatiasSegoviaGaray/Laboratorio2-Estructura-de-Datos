@@ -10,3 +10,16 @@ Thu Mar 26 07:07:46 PM UTC 2026:
  tests:  1|5
 total_score: 10/60
 2121d3a
+Thu Mar 26 07:18:18 PM UTC 2026: 
+ list.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:50:31: error: expected ‘;’ before ‘}’ token
+   50 |     return list->current->data
+      |                               ^
+      |                               ;
+   51 | }
+      | ~                              
+aaf7cbd
