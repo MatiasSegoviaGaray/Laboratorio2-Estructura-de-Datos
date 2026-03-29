@@ -130,7 +130,7 @@ void * popCurrent(List * list) {
 
     Node * siguiente = eliminado -> next;
     
-    if(list -> prev  != NULL){
+    if(eliminado -> prev  != NULL){
         eliminado -> prev -> next = eliminado -> next;
     }
     else{
@@ -147,7 +147,7 @@ void * popCurrent(List * list) {
     list -> current = siguiente;
     free(eliminado);
     
-    return NULL;
+    return data;
 }
 
 void cleanList(List * list) {
