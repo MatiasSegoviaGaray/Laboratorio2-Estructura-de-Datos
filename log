@@ -117,3 +117,18 @@ Thu Mar 26 08:04:00 PM UTC 2026:
  tests:  9|3
 total_score: 30/60
 afc9cc0
+Sun Mar 29 10:11:15 PM UTC 2026: 
+ list.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:106:31: error: ‘nuevo’ undeclared (first use in this function)
+  106 |     list -> current -> next = nuevo Dato;
+      |                               ^~~~~
+list.c:106:31: note: each undeclared identifier is reported only once for each function it appears in
+list.c:106:36: error: expected ‘;’ before ‘Dato’
+  106 |     list -> current -> next = nuevo Dato;
+      |                                    ^~~~~
+      |                                    ;
+880ecfe
