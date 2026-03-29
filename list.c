@@ -144,7 +144,8 @@ void * popCurrent(List * list) {
         list -> tail = eliminado -> prev;
     }
 
-    free(list -> current);
+    list -> current = siguiente;
+    free(eliminado);
     
     return NULL;
 }
